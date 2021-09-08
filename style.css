@@ -84,7 +84,7 @@ td {
     border-top: solid 1px #00000030;
 }
 
-iframe#maps {width: 100%;margin: 1%;height: 300px;}
+iframe.maps {width: 100%;margin: 1%;height: 300px;}
 
 div#galerie {
     display: flex;
@@ -139,4 +139,16 @@ img#vera {
     padding-left: 2%;
     margin-left: 1%;
     flex-wrap: wrap;
+}
+
+details[open] summary {
+    background: #a78a62;
+}
+
+summary:visited {
+    background-color: aliceblue;
+}
+
+main li summary {
+    background: transparent;
 }
