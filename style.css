@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
-
 html {
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -19,7 +17,13 @@ body {
     background-size: cover;
 }
 
-header {margin-top: 20%;color: white;text-align: center;margin-bottom: 5%;}
+header {
+    margin-top: 20%;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    animation: 3s linear arriving;
+}
 
 h1 {
     font-size: 6em;
@@ -96,10 +100,11 @@ main summary {
     display: block;
     padding: 0 2%;
     width: fit-content;
+    transition: background 0.3s;
 }
 
 main summary:hover {
-    background-color: hsl(35deg 41% 56%);
+    background: hsl(35deg 41% 56%);
     cursor: pointer;
 }
 
@@ -145,10 +150,13 @@ details[open] summary {
     background: #a78a62;
 }
 
-summary:visited {
-    background-color: aliceblue;
-}
-
 main li summary {
     background: transparent;
 }
+
+ul#massages li {
+    line-height: 1.5em;
+    margin-bottom: 1%;
+}
+
+@keyframes arriving { from { opacity: 0; } to { opacity: 1; }  }
