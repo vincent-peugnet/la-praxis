@@ -1,5 +1,13 @@
 html {
     font-family: 'Noto Sans JP', sans-serif;
+    background: fixed url(arbre_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    margin: 0;
+    background: #0000;
 }
 
 main {
@@ -9,13 +17,6 @@ main {
     max-width: 900px;
     /* margin-bottom: 70%; */
     padding-bottom: 5%;
-}
-
-body {
-    margin: 0;
-    background: fixed url(arbre_01.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 header {
@@ -100,7 +101,7 @@ main summary {
     border-radius: 25px;
     display: block;
     padding: 0 2%;
-    width: fit-content;
+    width: max-content;
     transition: background 0.3s;
 }
 
@@ -150,6 +151,15 @@ img#vera {
 details[open] summary {
     background: #a78a62;
 }
+
+details > summary::after {
+    content: ' ▽';
+}
+
+details[open] > summary::after {
+    content: ' ▼';
+}
+
 
 main li summary {
     background: transparent;
