@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 html {
-    font-family: 'Noto Sans JP', sans-serif;
     background: fixed url(arbre_01.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'Amiri';
+    font-size: large;
 }
 
 body {
@@ -12,9 +17,9 @@ body {
 
 main {
     background: #dac19fd6;
-    padding: 2%;
+    padding: 5%;
     margin: auto;
-    max-width: 900px;
+    max-width: 800px;
     /* margin-bottom: 70%; */
     padding-bottom: 5%;
 }
@@ -32,12 +37,32 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    margin-top: 13%;
+}
+
+main h2 {
+    text-align: center;
+    border-top: solid 1px #e6d8c6;
+    padding-top: 8%;
+    font-weight: normal;
+    font-size: 2em;
+    color: #321402;
+    margin-bottom: 7%;
+}
+
+address {
+    line-height: 2em;
+    text-align: -webkit-center;
+    font-style: normal;
+}
+
 main p {
     text-align: justify;
     line-height: 1.6;
 }
 
-main img {width: 49%;margin: 1%;}
+main img {width: 49%;margin: 1%;object-fit: cover;}
 
 nav a, footer a {
     text-decoration: none;
@@ -88,9 +113,11 @@ table {
 
 td {
     border-top: solid 1px #00000030;
+    border-bottom: solid 1px #00000030;
+    border-spacing: 5;
 }
 
-iframe.maps {width: 100%;margin: 1%;height: 300px;}
+iframe.maps {width: 100%;margin: 1%;height: 300px;border: solid 1px #a5885fa6;}
 
 div#galerie {
     display: flex;
@@ -103,6 +130,7 @@ main summary {
     padding: 0 2%;
     width: max-content;
     transition: background 0.3s;
+    border: solid 1px #a5885fa6;
 }
 
 main summary:hover {
@@ -153,21 +181,42 @@ details[open] summary {
 }
 
 details > summary::after {
-    content: ' ▽';
+    content: '';
 }
 
 details[open] > summary::after {
-    content: ' ▼';
+    content: '';
 }
 
-
 main li summary {
-    background: transparent;
+    background: #a4875f2b;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 96%;
+    text-align: center;
+    max-width: 500px;
 }
 
 ul#massages li {
     line-height: 1.5em;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 @keyframes arriving { from { opacity: 0; } to { opacity: 1; }  }
+
+ul#massages {
+    list-style: disc;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+li details {
+    text-align: justify;
+}
+
+main em#catchphrase {
+    font-size: 1.7em;
+    text-align: center;
+    display: block;
+    color: hsl(35deg 28% 25%);
+}
