@@ -9,3 +9,9 @@ This repo contains the source files of the website in HTML/CSS format.
 
 Webmaster contact: Vincent Peugnet - <vincent-peugnet@riseup.net>
 
+
+
+Building
+--------
+
+    ./.build.sh

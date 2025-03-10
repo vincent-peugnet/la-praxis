@@ -3,7 +3,7 @@
 
 
 html {
-    background: fixed url(arbre_01.jpg);
+    background: fixed url(lac.webp);
     background-size: cover;
     background-position: center;
     font-family: 'Amiri';
@@ -62,7 +62,12 @@ main p {
     line-height: 1.6;
 }
 
-main img {width: 49%;margin: 1%;object-fit: cover;}
+main img {
+    max-width: 370px;
+    width: 48%;
+    margin: 1%;
+    object-fit: cover;
+}
 
 nav a, footer a {
     text-decoration: none;
@@ -117,10 +122,16 @@ td {
     border-spacing: 5;
 }
 
-iframe.maps {width: 100%;margin: 1%;height: 300px;border: solid 1px #a5885fa6;}
+iframe.maps {
+    width: 100%;
+    margin: 1%;
+    height: 300px;
+    border: solid 1px #a5885fa6;
+}
 
 div#galerie {
     display: flex;
+    justify-content: center;
 }
 
 main summary {
