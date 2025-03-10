@@ -1,5 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* amiri-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/amiri-v27-latin-regular.woff2') format('woff2');
+}
 
+/* amiri-italic - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Amiri';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/amiri-v27-latin-italic.woff2') format('woff2');
+}
+
+/* amiri-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/amiri-v27-latin-700.woff2') format('woff2');
+}
+
+/* amiri-700italic - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Amiri';
+    font-style: italic;
+    font-weight: 700;
+    src: url('fonts/amiri-v27-latin-700italic.woff2') format('woff2');
+}
 
 
 html {
@@ -22,6 +55,7 @@ main {
     max-width: 800px;
     /* margin-bottom: 70%; */
     padding-bottom: 5%;
+    border-radius: 5px;
 }
 
 header {
@@ -67,9 +101,11 @@ main img {
     width: 48%;
     margin: 1%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
-nav a, footer a {
+nav a,
+footer a {
     text-decoration: none;
     height: 100%;
     color: hsl(35deg 37% 87%);
@@ -92,7 +128,8 @@ nav {
     margin: auto;
 }
 
-nav a:hover, footer a:hover {
+nav a:hover,
+footer a:hover {
     font-style: italic;
 }
 
@@ -102,7 +139,9 @@ strong#description {
     font-weight: lighter;
 }
 
-header em {display: block;}
+header em {
+    display: block;
+}
 
 main a {
     color: #543710;
@@ -191,11 +230,11 @@ details[open] summary {
     background: #a78a62;
 }
 
-details > summary::after {
+details>summary::after {
     content: '';
 }
 
-details[open] > summary::after {
+details[open]>summary::after {
     content: '';
 }
 
@@ -213,7 +252,15 @@ ul#massages li {
     margin-bottom: 2%;
 }
 
-@keyframes arriving { from { opacity: 0; } to { opacity: 1; }  }
+@keyframes arriving {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 ul#massages {
     list-style: disc;
