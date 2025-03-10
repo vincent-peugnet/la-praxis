@@ -49,7 +49,7 @@ body {
 }
 
 main {
-    background: #dac19fd6;
+    background: #dac19fe0;
     padding: 5%;
     margin: auto;
     max-width: 800px;
@@ -85,10 +85,16 @@ main h2 {
     margin-bottom: 7%;
 }
 
-address {
-    line-height: 2em;
-    text-align: -webkit-center;
+main address p {
+    line-height: 3em;
     font-style: normal;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+main address summary {
+    margin: auto;
 }
 
 main p {
